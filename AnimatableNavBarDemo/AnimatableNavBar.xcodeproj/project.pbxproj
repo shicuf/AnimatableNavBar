@@ -19,6 +19,15 @@
 		98A38EF01D28DB8A00E03C90 /* BLAnimatableNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38EEF1D28DB8A00E03C90 /* BLAnimatableNavBar.m */; };
 		98A38EF31D28DBE900E03C90 /* BLAnimatableNavBarBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38EF21D28DBE900E03C90 /* BLAnimatableNavBarBehavior.m */; };
 		98A38EF61D28F0E800E03C90 /* BLImageStyleBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38EF51D28F0E800E03C90 /* BLImageStyleBehavior.m */; };
+		98A38EFB1D2915B000E03C90 /* BLTabTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38EFA1D2915B000E03C90 /* BLTabTitleCell.m */; };
+		98A38EFE1D29162A00E03C90 /* BLPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38EFD1D29162A00E03C90 /* BLPagerController.m */; };
+		98A38F011D291E2600E03C90 /* BLTabPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38F001D291E2600E03C90 /* BLTabPagerController.m */; };
+		98A38F041D291E9C00E03C90 /* BLTabButtonPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38F031D291E9C00E03C90 /* BLTabButtonPagerController.m */; };
+		98A38F071D293CC600E03C90 /* BLCustomPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38F061D293CC600E03C90 /* BLCustomPagerController.m */; };
+		98A38F0E1D293ECF00E03C90 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38F091D293ECF00E03C90 /* CollectionViewController.m */; };
+		98A38F131D293F0000E03C90 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38F121D293F0000E03C90 /* ListViewController.m */; };
+		98A38F161D293F9100E03C90 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38F151D293F9100E03C90 /* CustomViewController.m */; };
+		98A38F191D29560900E03C90 /* BLCustomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38F181D29560900E03C90 /* BLCustomBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +53,25 @@
 		98A38EF21D28DBE900E03C90 /* BLAnimatableNavBarBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAnimatableNavBarBehavior.m; sourceTree = "<group>"; };
 		98A38EF41D28F0E800E03C90 /* BLImageStyleBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLImageStyleBehavior.h; sourceTree = "<group>"; };
 		98A38EF51D28F0E800E03C90 /* BLImageStyleBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLImageStyleBehavior.m; sourceTree = "<group>"; };
+		98A38EF81D29157500E03C90 /* BLTabTitleCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTabTitleCellProtocol.h; sourceTree = "<group>"; };
+		98A38EF91D2915B000E03C90 /* BLTabTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTabTitleCell.h; sourceTree = "<group>"; };
+		98A38EFA1D2915B000E03C90 /* BLTabTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTabTitleCell.m; sourceTree = "<group>"; };
+		98A38EFC1D29162A00E03C90 /* BLPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPagerController.h; sourceTree = "<group>"; };
+		98A38EFD1D29162A00E03C90 /* BLPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPagerController.m; sourceTree = "<group>"; };
+		98A38EFF1D291E2600E03C90 /* BLTabPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTabPagerController.h; sourceTree = "<group>"; };
+		98A38F001D291E2600E03C90 /* BLTabPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTabPagerController.m; sourceTree = "<group>"; };
+		98A38F021D291E9C00E03C90 /* BLTabButtonPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTabButtonPagerController.h; sourceTree = "<group>"; };
+		98A38F031D291E9C00E03C90 /* BLTabButtonPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTabButtonPagerController.m; sourceTree = "<group>"; };
+		98A38F051D293CC600E03C90 /* BLCustomPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCustomPagerController.h; sourceTree = "<group>"; };
+		98A38F061D293CC600E03C90 /* BLCustomPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCustomPagerController.m; sourceTree = "<group>"; };
+		98A38F081D293ECF00E03C90 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		98A38F091D293ECF00E03C90 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		98A38F111D293F0000E03C90 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		98A38F121D293F0000E03C90 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		98A38F141D293F9100E03C90 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		98A38F151D293F9100E03C90 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		98A38F171D29560900E03C90 /* BLCustomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCustomBar.h; sourceTree = "<group>"; };
+		98A38F181D29560900E03C90 /* BLCustomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCustomBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +88,7 @@
 		985761931D28119100F278BE = {
 			isa = PBXGroup;
 			children = (
+				98A38EF71D29153B00E03C90 /* PagerController */,
 				985761B61D28188400F278BE /* AnimatableNavBar */,
 				9857619E1D28119100F278BE /* AnimatableNavBarDemo */,
 				9857619D1D28119100F278BE /* Products */,
@@ -81,6 +110,16 @@
 				985761A31D28119100F278BE /* AppDelegate.m */,
 				985761A51D28119100F278BE /* ViewController.h */,
 				985761A61D28119100F278BE /* ViewController.m */,
+				98A38F051D293CC600E03C90 /* BLCustomPagerController.h */,
+				98A38F061D293CC600E03C90 /* BLCustomPagerController.m */,
+				98A38F171D29560900E03C90 /* BLCustomBar.h */,
+				98A38F181D29560900E03C90 /* BLCustomBar.m */,
+				98A38F141D293F9100E03C90 /* CustomViewController.h */,
+				98A38F151D293F9100E03C90 /* CustomViewController.m */,
+				98A38F081D293ECF00E03C90 /* CollectionViewController.h */,
+				98A38F091D293ECF00E03C90 /* CollectionViewController.m */,
+				98A38F111D293F0000E03C90 /* ListViewController.h */,
+				98A38F121D293F0000E03C90 /* ListViewController.m */,
 				985761A81D28119100F278BE /* Main.storyboard */,
 				985761AB1D28119100F278BE /* Assets.xcassets */,
 				985761AD1D28119100F278BE /* LaunchScreen.storyboard */,
@@ -117,6 +156,22 @@
 			path = AnimatableNavBar;
 			sourceTree = "<group>";
 		};
+		98A38EF71D29153B00E03C90 /* PagerController */ = {
+			isa = PBXGroup;
+			children = (
+				98A38EF81D29157500E03C90 /* BLTabTitleCellProtocol.h */,
+				98A38EF91D2915B000E03C90 /* BLTabTitleCell.h */,
+				98A38EFA1D2915B000E03C90 /* BLTabTitleCell.m */,
+				98A38EFC1D29162A00E03C90 /* BLPagerController.h */,
+				98A38EFD1D29162A00E03C90 /* BLPagerController.m */,
+				98A38EFF1D291E2600E03C90 /* BLTabPagerController.h */,
+				98A38F001D291E2600E03C90 /* BLTabPagerController.m */,
+				98A38F021D291E9C00E03C90 /* BLTabButtonPagerController.h */,
+				98A38F031D291E9C00E03C90 /* BLTabButtonPagerController.m */,
+			);
+			path = PagerController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +198,7 @@
 		985761941D28119100F278BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BL;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Belle;
 				TargetAttributes = {
@@ -187,12 +243,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A38F041D291E9C00E03C90 /* BLTabButtonPagerController.m in Sources */,
 				98A38EF01D28DB8A00E03C90 /* BLAnimatableNavBar.m in Sources */,
+				98A38F131D293F0000E03C90 /* ListViewController.m in Sources */,
+				98A38F011D291E2600E03C90 /* BLTabPagerController.m in Sources */,
 				98A38EF61D28F0E800E03C90 /* BLImageStyleBehavior.m in Sources */,
+				98A38F071D293CC600E03C90 /* BLCustomPagerController.m in Sources */,
+				98A38F191D29560900E03C90 /* BLCustomBar.m in Sources */,
+				98A38EFB1D2915B000E03C90 /* BLTabTitleCell.m in Sources */,
 				985761BC1D28271000F278BE /* BLSubviewLayoutAttributes.m in Sources */,
 				985761A71D28119100F278BE /* ViewController.m in Sources */,
+				98A38F0E1D293ECF00E03C90 /* CollectionViewController.m in Sources */,
 				985761BF1D282A8800F278BE /* UIView+BLSubview.m in Sources */,
 				985761A41D28119100F278BE /* AppDelegate.m in Sources */,
+				98A38F161D293F9100E03C90 /* CustomViewController.m in Sources */,
+				98A38EFE1D29162A00E03C90 /* BLPagerController.m in Sources */,
 				98A38EF31D28DBE900E03C90 /* BLAnimatableNavBarBehavior.m in Sources */,
 				985761A11D28119100F278BE /* main.m in Sources */,
 				985761B91D2822D000F278BE /* BLSplitterDelegate.m in Sources */,
