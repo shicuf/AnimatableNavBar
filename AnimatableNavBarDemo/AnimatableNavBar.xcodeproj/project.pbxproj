@@ -13,10 +13,16 @@
 		985761AA1D28119100F278BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985761A81D28119100F278BE /* Main.storyboard */; };
 		985761AC1D28119100F278BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 985761AB1D28119100F278BE /* Assets.xcassets */; };
 		985761AF1D28119100F278BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985761AD1D28119100F278BE /* LaunchScreen.storyboard */; };
+		985761B91D2822D000F278BE /* BLSplitterDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 985761B81D2822D000F278BE /* BLSplitterDelegate.m */; };
+		985761BC1D28271000F278BE /* BLSubviewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 985761BB1D28271000F278BE /* BLSubviewLayoutAttributes.m */; };
+		985761BF1D282A8800F278BE /* UIView+BLSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 985761BE1D282A8800F278BE /* UIView+BLSubview.m */; };
+		98A38EF01D28DB8A00E03C90 /* BLAnimatableNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38EEF1D28DB8A00E03C90 /* BLAnimatableNavBar.m */; };
+		98A38EF31D28DBE900E03C90 /* BLAnimatableNavBarBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38EF21D28DBE900E03C90 /* BLAnimatableNavBarBehavior.m */; };
+		98A38EF61D28F0E800E03C90 /* BLImageStyleBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A38EF51D28F0E800E03C90 /* BLImageStyleBehavior.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9857619C1D28119100F278BE /* AnimatableNavBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatableNavBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9857619C1D28119100F278BE /* AnimatableNavBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatableNavBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		985761A01D28119100F278BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		985761A21D28119100F278BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		985761A31D28119100F278BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +32,18 @@
 		985761AB1D28119100F278BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		985761AE1D28119100F278BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		985761B01D28119100F278BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		985761B71D2822D000F278BE /* BLSplitterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSplitterDelegate.h; sourceTree = "<group>"; };
+		985761B81D2822D000F278BE /* BLSplitterDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSplitterDelegate.m; sourceTree = "<group>"; };
+		985761BA1D28271000F278BE /* BLSubviewLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSubviewLayoutAttributes.h; sourceTree = "<group>"; };
+		985761BB1D28271000F278BE /* BLSubviewLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSubviewLayoutAttributes.m; sourceTree = "<group>"; };
+		985761BD1D282A8800F278BE /* UIView+BLSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BLSubview.h"; sourceTree = "<group>"; };
+		985761BE1D282A8800F278BE /* UIView+BLSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BLSubview.m"; sourceTree = "<group>"; };
+		98A38EEE1D28DB8A00E03C90 /* BLAnimatableNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAnimatableNavBar.h; sourceTree = "<group>"; };
+		98A38EEF1D28DB8A00E03C90 /* BLAnimatableNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAnimatableNavBar.m; sourceTree = "<group>"; };
+		98A38EF11D28DBE900E03C90 /* BLAnimatableNavBarBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAnimatableNavBarBehavior.h; sourceTree = "<group>"; };
+		98A38EF21D28DBE900E03C90 /* BLAnimatableNavBarBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAnimatableNavBarBehavior.m; sourceTree = "<group>"; };
+		98A38EF41D28F0E800E03C90 /* BLImageStyleBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLImageStyleBehavior.h; sourceTree = "<group>"; };
+		98A38EF51D28F0E800E03C90 /* BLImageStyleBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLImageStyleBehavior.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +60,7 @@
 		985761931D28119100F278BE = {
 			isa = PBXGroup;
 			children = (
+				985761B61D28188400F278BE /* AnimatableNavBar */,
 				9857619E1D28119100F278BE /* AnimatableNavBarDemo */,
 				9857619D1D28119100F278BE /* Products */,
 			);
@@ -50,7 +69,7 @@
 		9857619D1D28119100F278BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9857619C1D28119100F278BE /* AnimatableNavBarDemo.app */,
+				9857619C1D28119100F278BE /* AnimatableNavBar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,12 +98,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		985761B61D28188400F278BE /* AnimatableNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				98A38EEE1D28DB8A00E03C90 /* BLAnimatableNavBar.h */,
+				98A38EEF1D28DB8A00E03C90 /* BLAnimatableNavBar.m */,
+				98A38EF11D28DBE900E03C90 /* BLAnimatableNavBarBehavior.h */,
+				98A38EF21D28DBE900E03C90 /* BLAnimatableNavBarBehavior.m */,
+				98A38EF41D28F0E800E03C90 /* BLImageStyleBehavior.h */,
+				98A38EF51D28F0E800E03C90 /* BLImageStyleBehavior.m */,
+				985761B71D2822D000F278BE /* BLSplitterDelegate.h */,
+				985761B81D2822D000F278BE /* BLSplitterDelegate.m */,
+				985761BA1D28271000F278BE /* BLSubviewLayoutAttributes.h */,
+				985761BB1D28271000F278BE /* BLSubviewLayoutAttributes.m */,
+				985761BD1D282A8800F278BE /* UIView+BLSubview.h */,
+				985761BE1D282A8800F278BE /* UIView+BLSubview.m */,
+			);
+			path = AnimatableNavBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9857619B1D28119100F278BE /* AnimatableNavBarDemo */ = {
+		9857619B1D28119100F278BE /* AnimatableNavBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 985761B31D28119100F278BE /* Build configuration list for PBXNativeTarget "AnimatableNavBarDemo" */;
+			buildConfigurationList = 985761B31D28119100F278BE /* Build configuration list for PBXNativeTarget "AnimatableNavBar" */;
 			buildPhases = (
 				985761981D28119100F278BE /* Sources */,
 				985761991D28119100F278BE /* Frameworks */,
@@ -94,9 +132,9 @@
 			);
 			dependencies = (
 			);
-			name = AnimatableNavBarDemo;
+			name = AnimatableNavBar;
 			productName = AnimatableNavBarDemo;
-			productReference = 9857619C1D28119100F278BE /* AnimatableNavBarDemo.app */;
+			productReference = 9857619C1D28119100F278BE /* AnimatableNavBar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 985761971D28119100F278BE /* Build configuration list for PBXProject "AnimatableNavBarDemo" */;
+			buildConfigurationList = 985761971D28119100F278BE /* Build configuration list for PBXProject "AnimatableNavBar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -126,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9857619B1D28119100F278BE /* AnimatableNavBarDemo */,
+				9857619B1D28119100F278BE /* AnimatableNavBar */,
 			);
 		};
 /* End PBXProject section */
@@ -149,9 +187,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A38EF01D28DB8A00E03C90 /* BLAnimatableNavBar.m in Sources */,
+				98A38EF61D28F0E800E03C90 /* BLImageStyleBehavior.m in Sources */,
+				985761BC1D28271000F278BE /* BLSubviewLayoutAttributes.m in Sources */,
 				985761A71D28119100F278BE /* ViewController.m in Sources */,
+				985761BF1D282A8800F278BE /* UIView+BLSubview.m in Sources */,
 				985761A41D28119100F278BE /* AppDelegate.m in Sources */,
+				98A38EF31D28DBE900E03C90 /* BLAnimatableNavBarBehavior.m in Sources */,
 				985761A11D28119100F278BE /* main.m in Sources */,
+				985761B91D2822D000F278BE /* BLSplitterDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +311,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hotbody.AnimatableNavBarDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AnimatableNavBar;
 			};
 			name = Debug;
 		};
@@ -279,14 +323,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hotbody.AnimatableNavBarDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AnimatableNavBar;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		985761971D28119100F278BE /* Build configuration list for PBXProject "AnimatableNavBarDemo" */ = {
+		985761971D28119100F278BE /* Build configuration list for PBXProject "AnimatableNavBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				985761B11D28119100F278BE /* Debug */,
@@ -295,13 +339,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		985761B31D28119100F278BE /* Build configuration list for PBXNativeTarget "AnimatableNavBarDemo" */ = {
+		985761B31D28119100F278BE /* Build configuration list for PBXNativeTarget "AnimatableNavBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				985761B41D28119100F278BE /* Debug */,
 				985761B51D28119100F278BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
