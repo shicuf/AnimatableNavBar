@@ -14,6 +14,7 @@
 
 #import "BLCustomBar.h"
 #import "BLSplitterDelegate.h"
+#import "BLImageStyleBehavior.h"
 
 static const CGFloat kTitleViewWidth = 162;
 static const CGFloat kTitleViewHeigth= 25;
@@ -71,7 +72,7 @@ static const CGFloat kTitleViewHeigth= 25;
     // Setup the bar
     self.communityBar = [[BLCustomBar alloc] initWithFrame:CGRectMake(0.0, 0.0, CGRectGetWidth(self.view.frame), 100.0)];
     
-    BLAnimatableNavBarBehavior *behaviorDefiner = [[BLAnimatableNavBarBehavior alloc] init];
+    BLImageStyleBehavior *behaviorDefiner = [[BLImageStyleBehavior alloc] init];
     [behaviorDefiner addSnappingPositionProgress:0.0 fromStartProgress:0.0 toEndProgress:0.5];
     [behaviorDefiner addSnappingPositionProgress:1.0 fromStartProgress:0.5 toEndProgress:1.0];
     behaviorDefiner.snappingEnabled = YES;
@@ -83,6 +84,32 @@ static const CGFloat kTitleViewHeigth= 25;
     self.recommendVc.tableView.delegate = (id<UITableViewDelegate>)self.delegateSplitter;
     //    self.monitorVc.tableView.delegate = (id<UITableViewDelegate>)self.delegateSplitter;
     [self.view addSubview:self.communityBar];
+    
+    
+    UIButton *leftBarButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftBarButton setImage:[UIImage imageNamed:@"nav_notification"] forState:UIControlStateNormal];
+    [leftBarButton setImage:[UIImage imageNamed:@"nav_notification_h"] forState:UIControlStateHighlighted];
+    [leftBarButton addTarget:self action:@selector(showRemindVc) forControlEvents:UIControlEventTouchUpInside];
+    [leftBarButton sizeToFit];
+    leftBarButton.frame = CGRectMake(12, 30, leftBarButton.frame.size.width, leftBarButton.frame.size.height);
+    [self.communityBar addSubview:leftBarButton];
+    
+    UIButton *rightBarButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightBarButton setImage:[UIImage imageNamed:@"nav_takePhoto"] forState:UIControlStateNormal];
+    [rightBarButton setImage:[UIImage imageNamed:@"nav_takePhoto_h"] forState:UIControlStateHighlighted];
+    [rightBarButton addTarget:self action:@selector(showPostVc) forControlEvents:UIControlEventTouchUpInside];
+    [rightBarButton sizeToFit];
+    rightBarButton.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - rightBarButton.frame.size.width - 12, 30, rightBarButton.frame.size.width, rightBarButton.frame.size.height);
+    [self.communityBar addSubview:rightBarButton];
+}
+
+#pragma mark - Event Response
+- (void)showRemindVc {
+    
+}
+
+- (void)showPostVc {
+    
 }
 
 - (void)addPagerController
