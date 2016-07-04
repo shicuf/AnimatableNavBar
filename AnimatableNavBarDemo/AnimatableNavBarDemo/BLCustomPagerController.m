@@ -19,7 +19,7 @@
 static const CGFloat kTitleViewWidth = 162;
 static const CGFloat kTitleViewHeigth= 25;
 
-@interface BLCustomPagerController ()<BLTabPagerControllerDelegate, BLPagerControllerDataSource>
+@interface BLCustomPagerController ()<BLPagerControllerDataSource>
 
 @property (nonatomic) BLCustomBar *communityBar;
 @property (nonatomic) BLSplitterDelegate *delegateSplitter;
@@ -116,7 +116,6 @@ static const CGFloat kTitleViewHeigth= 25;
 {
     BLTabButtonPagerController *pagerController = [[BLTabButtonPagerController alloc] initWithSuperBarView:_communityBar.segmentBgView];
     pagerController.dataSource = self;
-    pagerController.delegate = self;
     pagerController.adjustStatusBarHeight = YES;
     //BLTabButtonPagerController set barstyle will reset (BLTabPagerController not reset)cell propertys
     pagerController.barStyle = _variable ? BLPagerBarStyleProgressBounceView: BLPagerBarStyleProgressView;
@@ -128,6 +127,16 @@ static const CGFloat kTitleViewHeigth= 25;
     }
     
     pagerController.view.frame = self.view.bounds;
+    __weak typeof(self) weakSelf = self;
+    pagerController.indexBlock = ^(NSInteger index) {
+        NSLog(@"当前选中的索引：%tu", index);
+        if (0 == index) {
+            weakSelf.delegateSplitter.additionalDelegate = weakSelf.recommendVc;
+            weakSelf.recommendVc.tableView.delegate = (id<UITableViewDelegate>)weakSelf.delegateSplitter;
+            // 更新bar的高度
+            [weakSelf.communityBar.behavior snapToResetProgress];
+        }
+    };
     [self addChildViewController:pagerController];
     [self.view addSubview:pagerController.view];
     _pagerController = pagerController;
@@ -167,18 +176,14 @@ static const CGFloat kTitleViewHeigth= 25;
         CustomViewController *VC = [[CustomViewController alloc]init];
         VC.text = [@(index) stringValue];
         self.monitorVc = VC;
-        return VC;
-    }
-}
-
-#pragma mark - BLTabPagerControllerDelegate
-
-- (void)pagerController:(BLTabPagerController *)pagerController didSelectAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 1) {
+        
         self.delegateSplitter.additionalDelegate = self.recommendVc;
         self.recommendVc.tableView.delegate = (id<UITableViewDelegate>)self.delegateSplitter;
         // 更新bar的高度
         [self.communityBar.behavior snapToResetProgress];
+        
+        return VC;
     }
 }
+
 @end

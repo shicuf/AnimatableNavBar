@@ -191,7 +191,7 @@
 # pragma clang diagnostic push
 # pragma clang diagnostic ignored "-Wundeclared-selector"
     
-    [_behavior performSelector:@selector(setAnimatableNavBar:) withObject:self];
+    [_behavior performSelector:@selector(BL_Private_setAnimatableNavBar:) withObject:self];
     
 # pragma clang diagnostic pop
 }

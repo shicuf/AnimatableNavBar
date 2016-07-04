@@ -14,7 +14,7 @@
 @property (nonatomic) NSMutableDictionary *progressRanges;
 
 //- (void)BLK_Private_setFlexibleHeightBar:(BLKFlexibleHeightBar *)flexibleHeightBar;
-- (void)setAnimatableNavBar:(BLAnimatableNavBar *)animatableNavBar;
+- (void)BL_Private_setAnimatableNavBar:(BLAnimatableNavBar *)animatableNavBar;
 
 @end
 
@@ -31,7 +31,7 @@
     return self;
 }
 
-- (void)setAnimatableNavBar:(BLAnimatableNavBar *)animatableNavBar {
+- (void)BL_Private_setAnimatableNavBar:(BLAnimatableNavBar *)animatableNavBar {
     if(_animatableNavBar != animatableNavBar) {
         _animatableNavBar = animatableNavBar;
     }

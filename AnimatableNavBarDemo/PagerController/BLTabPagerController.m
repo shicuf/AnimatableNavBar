@@ -199,7 +199,12 @@
 
 - (void)tabScrollToIndex:(NSInteger)index animated:(BOOL)animated {
     if (index < self.countOfControllers) {
-        [_collectionViewBar scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:animated];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+        if (_tabDelegateFlags.didSelectAtIndexPath) {
+            [self.delegate pagerController:self didSelectAtIndexPath:indexPath];
+        }
+        
+        [_collectionViewBar scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:animated];
     }
 }
 
@@ -285,6 +290,7 @@
     UICollectionViewCell *toCell = [self cellForIndex:toIndex];
     
     if (![self isProgressScrollEnabel]) {
+        
         // if isn't progressing
         if (_tabDelegateFlags.transitionFromeCellAnimated) {
             [self.delegate pagerController:self transitionFromeCell:fromCell toCell:toCell animated:animated];

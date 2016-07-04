@@ -162,6 +162,13 @@
     titleCell.titleLabel.font = self.selectedTextFont;
 }
 
+- (void)pagerController:(BLTabPagerController *)pagerController didSelectAtIndexPath:(NSIndexPath *)indexPath {
+//    NSLog(@"当前选中：%tu", indexPath.row);
+    if (self.indexBlock) {
+        self.indexBlock(indexPath.row);
+    }
+}
+
 - (void)pagerController:(BLTabPagerController *)pagerController transitionFromeCell:(UICollectionViewCell<BLTabTitleCellProtocol> *)fromCell toCell:(UICollectionViewCell<BLTabTitleCellProtocol> *)toCell animated:(BOOL)animated
 {
     if (animated) {

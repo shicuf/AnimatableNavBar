@@ -12,14 +12,14 @@
 @interface BLSplitterDelegate : NSObject
 
 /**
- * UIScrollView的原有代理
- */
-@property (nonatomic, weak) id<NSObject> originalDelegate;
-
-/**
  * UIScrollView的附加代理
  */
 @property (nonatomic, weak) id<NSObject> additionalDelegate;
+
+/**
+ * UIScrollView的原有代理
+ */
+@property (nonatomic, weak) id<NSObject> originalDelegate;
 
 /**
  *  实例化一个分类器代理

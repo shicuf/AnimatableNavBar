@@ -15,7 +15,7 @@
 @interface BLAnimatableNavBar : UIToolbar
 
 /**
-*  用于控制navBar的高度，如果'elasticMaximumHeightAtTop'是NO，progress~[0.0, 1.0], 0.0显示最大高度，1.0显示做小高度
+*  用于控制navBar的高度，如果'elastic'是NO，progress~[0.0, 1.0], 0.0显示最大高度，1.0显示做小高度
 */
 @property (nonatomic) CGFloat progress;
 
